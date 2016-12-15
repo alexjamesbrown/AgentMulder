@@ -41,6 +41,13 @@ namespace AgentMulder.Containers.Autofac.Patterns.FromAssemblies
                 yield break;
             }
 
+
+            // TODO
+            // there seems to be an issue with R#'s SSR type resolution
+            // e.g. if we first match $builder$.RegisterAssemblyTypes($assemblies$)
+            // and then match for $builder$.AsClosedTypesOf($argument$)
+            // providing a type definition for builder in the second match causes nothing to be matched
+            // we should keep an eye on this one in future releases
             IStructuralMatchResult match = Match(registrationRootElement);
             if (match.Matched)
             {
