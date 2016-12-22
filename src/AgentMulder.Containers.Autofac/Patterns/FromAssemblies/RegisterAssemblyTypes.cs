@@ -48,6 +48,7 @@ namespace AgentMulder.Containers.Autofac.Patterns.FromAssemblies
             // and then match for $builder$.AsClosedTypesOf($argument$)
             // providing a type definition for builder in the second match causes nothing to be matched
             // we should keep an eye on this one in future releases
+            // Issue has been reported: https://youtrack.jetbrains.com/issue/RSRP-458297
             IStructuralMatchResult match = Match(registrationRootElement);
             if (match.Matched)
             {
