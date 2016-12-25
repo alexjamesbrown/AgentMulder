@@ -1,6 +1,5 @@
 using AgentMulder.Containers.CastleWindsor;
 using AgentMulder.Containers.CastleWindsor.Providers;
-using AgentMulder.ReSharper.Domain.Containers;
 
 namespace AgentMulder.ReSharper.Tests.Windsor
 {
@@ -12,7 +11,7 @@ namespace AgentMulder.ReSharper.Tests.Windsor
             get { return @"Windsor\TestCases"; }
         }
 
-        protected override IContainerInfo ContainerInfo
+        protected override WindsorContainerInfo ContainerInfo
         {
             get
             {

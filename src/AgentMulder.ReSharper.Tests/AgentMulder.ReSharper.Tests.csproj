@@ -435,11 +435,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgentMulderTestBase.cs" />
+    <Compile Include="IsolationChamber.cs" />
+    <Compile Include="TestInvocator.cs" />
     <Compile Include="Autofac\ContainerBuilderTests.cs" />
     <Compile Include="Autofac\MvcTests.cs" />
     <Compile Include="Autofac\RegisterAssemblyTypesTests.cs" />
     <Compile Include="Catel\ServiceLocatorTests.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="IsolatedTestEntryPoint.cs" />
     <Compile Include="Ninject\KernelTests.cs" />
     <Compile Include="Ninject\ModuleTests.cs" />
     <Compile Include="Ninject\SanityTests.cs" />

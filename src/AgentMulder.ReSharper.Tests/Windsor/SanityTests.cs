@@ -12,7 +12,7 @@ namespace AgentMulder.ReSharper.Tests.Windsor
             get { return @"Windsor"; }
         }
 
-        protected override IContainerInfo ContainerInfo
+        protected override WindsorContainerInfo ContainerInfo
         {
             get
             {

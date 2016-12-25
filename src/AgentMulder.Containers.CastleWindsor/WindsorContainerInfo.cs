@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Hosting;
 using System.Linq;
@@ -11,7 +12,7 @@ using AgentMulder.ReSharper.Domain.Registrations;
 namespace AgentMulder.Containers.CastleWindsor
 {
     [Export(typeof(IContainerInfo))]
-    public class WindsorContainerInfo : IContainerInfo
+    public class WindsorContainerInfo : MarshalByRefObject, IContainerInfo
     {
         private readonly List<IRegistrationPattern> registrationPatterns;
 
